@@ -1,5 +1,3 @@
-docker run -e DISPLAY=192.168.59.3:0 jess/geary
-
 FROM ubuntu:14.04
 
 MAINTAINER Thomas Moerman (https://twitter.com/thomasjmoerman)
@@ -27,5 +25,3 @@ RUN wget https://pypi.python.org/packages/source/f/fastcluster/fastcluster-1.1.1
   && rm -r fastcluster-1.1.13/
 
 CMD cd mapper && python bin/MapperGUI.py
-
-# EOF
